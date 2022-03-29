@@ -3,7 +3,7 @@
 }
 .back {
 	background-image: blue url(../images/admin.jpg);
-	background-blend-mode: overlay;
+	background-blend-mode: multiply;
 	background-size: cover;
 	margin: 0;
 }
