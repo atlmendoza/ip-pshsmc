@@ -2,8 +2,8 @@
 	box-sizing: border-box;
 }
 .back {
-	background-image: blue url(../images/admin.jpg);
-	background-blend-mode: multiply;
+	background: blue url(../images/admin.jpg);
+	background-blend-mode: lighten;
 	background-size: cover;
 	margin: 0;
 }
@@ -26,4 +26,29 @@
 
 a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
+}
+
+.modal-header {
+	background:#189AB4;
+}
+
+span.modal_req {
+	 font-style: italic;
+	 font-size: 0.75em;
+	 color: navy;
+	 font-weight: bold"
+}
+
+img.card-img-top {
+	width: 100%;
+}
+
+.tile {
+	width: 33%;
+}
+
+@media only screen and (max-width: 600px) {
+  .tile {
+    width: 48%;
+  }
 }
