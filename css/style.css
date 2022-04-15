@@ -56,17 +56,14 @@ img.card-img-top {
 	color: gray;
 }
 
-figure#ip {
-	text-align:center
+#ip {
+	text-align:center;
+	font-size: 0.70em;
 }
 
 .ipdefine {
 	font-size: 1.2em;
 }
-figcaption {
-	font-size: 0.70em;
-}
-
 
 
 @media only screen and (max-width: 600px) {
