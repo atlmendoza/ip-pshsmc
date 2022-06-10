@@ -121,19 +121,18 @@
                       forget to include the names of your Research Adviser/s and Research Teacher/s
                       in the form </span></li>
                       <li> <a href=".\req_docs\tapi\2a-preliminary search report.pdf" target="_blank">Preliminary Search Report</a></li>
-                      <li> <a href=".\req_docs\tapi\ipophil_ssheet.pdf">IPOPhil Supplementary Sheet </a> </li>
+                      <li> <a href=".\req_docs\tapi\ipophil_ssheet.pdf" target="_blank">IPOPhil Supplementary Sheet </a> </li>
                       <li> Special Power of Attorney </li>
                       <li> Drawings/Sketches of the technology (if any) = all perspectives</li>
                       <li> Test Results (if any)</li>
-                      <li> Technical Report/Thesis (Journal type) / Infographics </li>
                       <li> Photocopies of identification (ID) of Inventors/Researcher</li>
                     </ol>
 
                     <h4 style="margin-top: 20px">by PSHS-OED for Copyrighting work</h4>
                     <ol class="list_links">
-                        <li> <a href=".\req_docs\oed\cdf.pdf"> Copyright Application form</a> + <a href=".\req_docs\oed\tform-sSheet.pdf"> BRR Supplementary Form </a></li>
-                        <li> <a href=".\req_docs\oed\dassignment.docx">Deed of Assignment </a></li>
-                        <li> <a href=".\req_docs\oed\aownership.docx">Ownership Agreement </a></li>
+                        <li> <a href=".\req_docs\oed\cdf.pdf"> Copyright Application form</a> + <a href=".\req_docs\oed\tform-sSheet.pdf" target="_blank"> BRR Supplementary Form </a></li>
+                        <li> <a href=".\req_docs\oed\dassignment.docx" target="_blank">Deed of Assignment </a></li>
+                        <li> <a href=".\req_docs\oed\aownership.docx" target="_blank">Ownership Agreement </a></li>
                         <li> Photocopies of identifications (IDs) of writers </li>
                     </ol>
 
@@ -333,7 +332,7 @@
                        <p class="ipdefine">
                          According to IPOPhil, .....
                        </p>
-                       
+
                        <br/>
                        <br/><br/>
                        <p>
@@ -359,53 +358,13 @@
               <div id="collapseOne" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <p><br/><a href="#" class="btn btn-secondary"  id="ippolicy">See Details</a></p>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" style="background:#5885AF">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                Meet your PSHSMC Patent Officer
-              </a>
-              </div>
-              <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" style="background:#189AB4">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                  Steps in Protecting your Original Work
-                </a>
-              </div>
-              <div id="collapseThree" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-              </div>
-          </div>
-
-        <div class="card">
-          <div class="card-header" style="background:#274472">
-            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-              Documents and Forms
-            </a>
-          </div>
-          <div id="collapseFive" class="collapse" data-parent="#accordion">
-            <div class="card-body list_links">
-              <ul>
-                  <li> <a href=".\req_docs\pshsmc student agreement form.pdf" target="_blank">PSHS-MS Student Agreement Form</a></li>
-                  <li> <a href=".\req_docs\1a-invention disclosure form.pdf" target="_blank">Invention Disclosure Form</a></li>
-                  <li> <a href=".\req_docs\2a-preliminary search report.pdf" target="_blank">Preliminary Search Report</a></li>
-                  <li> <a href=".\req_docs\ip_annex_b1pshsmc.pdf" target="_blank">Intellectual Property Disclosure Form</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
+
 
 
     <!-- contact information in the footer -->
@@ -473,7 +432,7 @@
             });
         });
 
-        $('#WhatIPButton').click(function() { // modal for application button
+        $('#WhatIPButton').click(function() { // What is IP
             $('#WhatIPModal').modal('show');
             $('#WhatIPDismiss').click(function() {
                 $('#WhatIPModal').modal('hide');
@@ -483,7 +442,7 @@
             });
         });
 
-        $('#Can_IButton').click(function() { // modal for application button
+        $('#Can_IButton').click(function() { // modal for how Can I
             $('#Can_IModal').modal('show');
             $('#Can_IDismiss').click(function() {
                 $('#Can_IModal').modal('hide');
@@ -493,7 +452,7 @@
             });
         });
 
-        $('#LimitsButton').click(function() { // modal for application button
+        $('#LimitsButton').click(function() { // modal for Limitations
             $('#LimitsModal').modal('show');
             $('#LimitsDismiss').click(function() {
                 $('#LimitsModal').modal('hide');
@@ -503,17 +462,7 @@
             });
         });
 
-        $('#WorksButton').click(function() { // modal for application button
-            $('#WorksModal').modal('show');
-            $('#WorksDismiss').click(function() {
-                $('#WorksModal').modal('hide');
-            });
-            $('#CancelBtn6').click(function() {
-                $('#LimitsModal').modal('hide');
-            });
-        });
-
-        $('#CycleButton').click(function() { // modal for application button
+        $('#CycleButton').click(function() { // modal for IP Cycle
             $('#CycleModal').modal('show');
             $('#CycleDismiss').click(function() {
                 $('#CycleModal').modal('hide');
@@ -523,15 +472,7 @@
             });
         });
 
-        $('#ClaimsButton').click(function() { // modal for application button
-            $('#ClaimsModal').modal('show');
-            $('#ClaimsDismiss').click(function() {
-                $('#ClaimsModal').modal('hide');
-            });
-            $('#CancelBtn8').click(function() {
-                $('#ClaimsModal').modal('hide');
-            });
-        });
+
         /*
         $('#loginBtn').click(function() { // modal for reserve button
             $('#loginModal').modal('show');
