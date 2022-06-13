@@ -174,14 +174,14 @@
                 <a href="#" class="btn btn-info"  id="LimitsButton">See Details</a>
             </div>
         </div>
-          <div class="card rights tile">
-              <img class="card-img-top" src="./images/cycle2.png" alt="Patent Life Cycle">
-              <div class="card-body">
-                  <!--h4 class="card-title">If a Title is needed </h4-->
-                  <!--p class="card-text">PatentLife Cycle</p-->
-                  <a href="#" class="btn btn-info"  id="CycleButton">See Details</a>
-              </div>
-          </div>
+        <div class="card rights tile">
+            <img class="card-img-top" src="./images/cycle2.png" alt="Patent Life Cycle">
+            <div class="card-body">
+                <!--h4 class="card-title">If a Title is needed </h4-->
+                <!--p class="card-text">PatentLife Cycle</p-->
+                <a href="#" class="btn btn-info"  id="CycleButton">See Details</a>
+            </div>
+        </div>
       </div>
 
     <!-- defining a card modal for IP Overview form -->
@@ -357,14 +357,49 @@
               </div>
               <div id="collapseOne" class="collapse show" data-parent="#accordion">
                 <div class="card-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  <p><br/><a href="#" class="btn btn-secondary"  id="ippolicy">See Details</a></p>
+                  <p>The Philippine Science High School System Intellectual Property Policy or PSHSS IP Policy were approved last October 30, 2020
+                    and it aims to achieve the following objectives:
+                    <ol class="policyObjs">
+                      <li>To ensure that the lntellectual Properties (IPs) of the PSHS System such as trademarks, utility models, industrial
+                        designs, copyrights and patents are accorded proper protection of law;</li>
+                      <li>To establish clear guidelines for determjning the rights and obligations of the PSHS System
+                        and the creators of intellectual properties and their sponsors, with respect to works created, or
+                        invented, or discovered at PSHS;</li>
+                      <li>To promote and support the PSHS system's role and performance as a Government Funding
+                        Agency (GFA) and a Research and Development Institute (RDI) pursuant to chapter ll (Sections 1-2) of DOST
+                        Administrative Order No. 016 series of 2019 or "DOST Intellectual Property Policy" and DOST Administrative
+                        Order No. 018 series of 2019 or "The lnteltectual Property Management protocol of the Department of Science
+                        and Technology-Government Funding Agencies, as Amended,"</li>
+                      <li>To establlsh guidelines for resolving conflicting interests among members of the PSHS Research community, students,
+                        and personnel with respect to Intellectual Property Rights
+                        (IPRs).</li>
+                    </ol>
+                  </p>
+                  <p><br/><a href="#" class="btn btn-secondary"  id="policyButton">Read in the Full the Policy here</a></p>
                 </div>
               </div>
             </div>
         </div>
       </div>
-
+      <!-- defining a card modal for PSHSS IP Policy -->
+     <div id="policyModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                  <div class="modal-header" style="background:#05445E">
+                      <h3 class="modal-title">PSHS System IP Policy</h3>
+                      <button type="button" class="close"  id="policyDismiss">
+                          &times;
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                    <object data="./req_docs/pshsippolicy.pdf" type="application/pdf" style="width:100%; height: 900px">
+                        <div>No online PDF viewer installed</div>
+                    </object>
+                    <!--iframe src="./req_docs/pshsippolicy.pdf" scrolling="auto" height="800" width="100%" ></iframe-->
+                  </div>
+              </div>
+          </div>
+      </div>
 
 
     <!-- contact information in the footer -->
@@ -469,6 +504,16 @@
             });
             $('#CancelBtn7').click(function() {
                 $('#CycleModal').modal('hide');
+            });
+        });
+
+        $('#policyButton').click(function() { // modal for IP Cycle
+            $('#policyModal').modal('show');
+            $('#policyDismiss').click(function() {
+                $('#policyModal').modal('hide');
+            });
+            $('#CancelBtn7').click(function() {
+                $('#policyModal').modal('hide');
             });
         });
 
