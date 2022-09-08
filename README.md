@@ -1,5 +1,6 @@
 # ip-pshsmc
 Sample 
-![PSHS Logo](ip-pshsmc/images/pshslogo.png)
+![PSHS Logo](https://github.com/atlmendoza/ip-pshsmc/blob/master/images/pshslogo.png)
+#
 [PSHS](https://pshs.edu.ph)
 
